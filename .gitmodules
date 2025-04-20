@@ -1,0 +1,3 @@
+[submodule "gradle-plugins"]
+	path = gradle-plugins
+	url = https://github.com/sollecitom/gradle-plugins
