@@ -1,16 +1,6 @@
-# Kotlin Monorepo and Monolith Example
+# Playground
 
-An example showcasing a monorepo and a monolith in Kotlin. 
-
-## Components
-
-- [Docs](./docs/README.md)
-- [Libraries](./libs/README.md)
-- [Services](./services/README.md)
-- [Tools](./tools/README.md)
-- [Resources](./resources/README.md)
-- [Examples](./example/README.md)
-- [Exercises](./exercise/README.md)
+A playground to test various things, before spinning them out as separate repositories.
 
 ## Requirements
 
@@ -52,7 +42,3 @@ just updateDependencies
 just publishLibraries
 
 ```
-
-## Outstanding quirks and gotchas
-
-- Check [the list of quirks and gotchas](docs/QUIRKS.md) to learn about things you should watch out for.

@@ -16,7 +16,7 @@ import java.nio.file.Paths
 
 buildscript {
     dependencies {
-        classpath("sollecitom", "gradle-plugins")
+        classpath("sollecitom.gradle-plugins", "gradle-plugins")
     }
 }
 

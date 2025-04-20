@@ -2,7 +2,7 @@ import sollecitom.plugins.RepositoryConfiguration
 
 buildscript {
     dependencies {
-        classpath("sollecitom", "gradle-plugins")
+        classpath("sollecitom.gradle-plugins", "gradle-plugins")
     }
 }
 
