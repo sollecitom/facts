@@ -1,7 +1,7 @@
 #!/usr/bin/env just --justfile
 
 push:
-    git add . && git commit -m "WIP" && git push --recurse-submodules=on-demand origin/main
+    git add . && git commit -m "WIP" && git push --recurse-submodules=on-demand origin main
 
 pull:
     git submodule update --recursive --remote
