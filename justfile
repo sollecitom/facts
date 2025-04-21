@@ -1,5 +1,11 @@
 #!/usr/bin/env just --justfile
 
+push:
+    git add . && git commit -m "WIP" && git push --recurse-submodules=on-demand
+
+pull:
+    git submodule update --recursive --remote
+
 build:
     ./gradlew build
 #    ./gradlew build jibDockerBuild containerBasedServiceTest
