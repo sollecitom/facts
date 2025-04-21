@@ -4,10 +4,10 @@ import sollecitom.plugins.conventions.task.kotlin.KotlinTaskConventions
 import sollecitom.plugins.conventions.task.maven.publish.MavenPublishConvention
 import sollecitom.plugins.conventions.task.test.AggregateTestMetricsConventions
 import sollecitom.plugins.conventions.task.test.TestTaskConventions
-import com.palantir.gradle.gitversion.GitVersionPlugin
-import com.palantir.gradle.gitversion.VersionDetails
 import sollecitom.plugins.RepositoryConfiguration
 import sollecitom.plugins.conventions.task.dependency.update.DependencyUpdateConvention
+import com.palantir.gradle.gitversion.GitVersionPlugin
+import com.palantir.gradle.gitversion.VersionDetails
 import groovy.lang.Closure
 import sollecitom.plugins.Plugins
 import sollecitom.plugins.ProjectSettings
