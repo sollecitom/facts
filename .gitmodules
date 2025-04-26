@@ -4,3 +4,6 @@
 [submodule "swissknife"]
 	path = swissknife
 	url = https://github.com/sollecitom/swissknife
+[submodule "acme-schema-catalogue"]
+	path = acme-schema-catalogue
+	url = https://github.com/sollecitom/acme-schema-catalogue

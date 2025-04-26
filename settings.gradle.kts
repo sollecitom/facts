@@ -3,6 +3,7 @@
 includeBuild(".")
 includeBuild("gradle-plugins")
 includeProject("swissknife")
+includeProject("acme-schema-catalogue")
 
 rootProject.name = "playground"
 
