@@ -24,7 +24,7 @@ fun subProject(rootFolder: String, vararg pathSegments: String, excludeRootFolde
 
     val projectName = pathSegments.last()
     val path = listOf(rootFolder) + pathSegments.dropLast(1)
-    val group = if (excludeRootFolderFromGroupName) path.minus(rootFolder).joinToString(separator = "-") else path.joinToString(separator = "-")
+    val group = if (excludeRootFolderFromGroupName) path.minus(rootFolder).joinToString(separator = "-", prefix = "${rootProject.name}-") else path.joinToString(separator = "-", prefix = "${rootProject.name}-")
     val directory = path.joinToString(separator = "/", prefix = "./")
     val fullProjectName = "${if (group.isEmpty()) "" else "$group-"}$projectName"
 
