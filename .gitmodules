@@ -10,3 +10,6 @@
 [submodule "pillar"]
 	path = pillar
 	url = https://github.com/sollecitom/pillar
+[submodule "examples"]
+	path = examples
+	url = https://github.com/sollecitom/examples
