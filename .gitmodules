@@ -7,3 +7,6 @@
 [submodule "acme-schema-catalogue"]
 	path = acme-schema-catalogue
 	url = https://github.com/sollecitom/acme-schema-catalogue
+[submodule "pillar"]
+	path = pillar
+	url = https://github.com/sollecitom/pillar
