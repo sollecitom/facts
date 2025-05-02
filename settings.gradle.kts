@@ -5,6 +5,7 @@ includeBuild("gradle-plugins")
 includeProject("swissknife")
 includeProject("acme-schema-catalogue")
 includeProject("pillar")
+includeProject("examples")
 
 rootProject.name = "playground"
 
