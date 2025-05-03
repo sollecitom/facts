@@ -50,7 +50,7 @@ class EventDrivenTicTacToeTests : CoreDataGenerator by CoreDataGenerator.testPro
     private val timeout = 5.seconds
 
     @Test
-    fun `two players playing a match`() = testWithMatchAndPlayers(timeout = timeout) { player1, player2, match ->
+    fun `two players playing a match`() = testWithMatchAndPlayers { player1, player2, match ->
 
         player1.waitForTurnAndClaimPosition(row = MID, column = CENTRE)
         player2.waitForTurnAndClaimPosition(row = BOTTOM, column = LEFT)
@@ -87,7 +87,7 @@ class EventDrivenTicTacToeTests : CoreDataGenerator by CoreDataGenerator.testPro
     }
 
     @Test
-    fun `a match resulting in a draw`() = testWithMatchAndPlayers(timeout = timeout) { player1, player2, match ->
+    fun `a match resulting in a draw`() = testWithMatchAndPlayers { player1, player2, match ->
 
         player1.waitForTurnAndClaimPosition(row = MID, column = CENTRE)
         player2.waitForTurnAndClaimPosition(row = BOTTOM, column = LEFT)
@@ -186,7 +186,7 @@ class EventDrivenTicTacToeTests : CoreDataGenerator by CoreDataGenerator.testPro
     }
 
     @Test
-    fun `a player concedes the match`() = testWithMatchAndPlayers(timeout = timeout) { player1, player2, match ->
+    fun `a player concedes the match`() = testWithMatchAndPlayers { player1, player2, match ->
 
         player1.waitForTurnAndClaimPosition(row = MID, column = CENTRE)
         player2.waitForTurnAndClaimPosition(row = BOTTOM, column = LEFT)
