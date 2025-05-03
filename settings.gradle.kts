@@ -41,4 +41,4 @@ fun includeProject(name: String) {
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
-example("libraries")
+example("libraries") // TODO remove this
