@@ -18,7 +18,7 @@ fun service(vararg pathSegments: String) = subProject(rootFolder = "services", p
 
 fun example(vararg pathSegments: String) = subProject(rootFolder = "example", pathSegments = pathSegments, excludeRootFolderFromGroupName = false)
 
-fun exercise(vararg pathSegments: String) = subProject(rootFolder = "exercise", pathSegments = pathSegments, excludeRootFolderFromGroupName = false)
+fun exercise(vararg pathSegments: String) = subProject(rootFolder = "exercises", pathSegments = pathSegments, excludeRootFolderFromGroupName = false)
 
 fun tool(vararg pathSegments: String) = subProject(rootFolder = "tools", pathSegments = pathSegments)
 
@@ -41,4 +41,4 @@ fun includeProject(name: String) {
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
-example("libraries") // TODO remove this
+exercise("event-driven-tic-tac-toe")
