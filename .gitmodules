@@ -13,3 +13,6 @@
 [submodule "examples"]
 	path = examples
 	url = https://github.com/sollecitom/examples
+[submodule "tools"]
+	path = tools
+	url = https://github.com/sollecitom/tools

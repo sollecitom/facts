@@ -6,6 +6,7 @@ includeProject("swissknife")
 includeProject("acme-schema-catalogue")
 includeProject("pillar")
 includeProject("examples")
+includeProject("tools")
 
 rootProject.name = "playground"
 

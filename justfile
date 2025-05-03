@@ -1,7 +1,10 @@
 #!/usr/bin/env just --justfile
 
-addSubmodule submodule:
+initSubmodule submodule:
     git submodule update --init --recursive {{submodule}}
+
+resetAll:
+    git fetch origin && git reset --hard origin/main && git clean -f -d
 
 push:
     git add . && git commit -m "WIP" && git push --recurse-submodules=on-demand origin main
