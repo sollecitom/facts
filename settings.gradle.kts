@@ -1,6 +1,5 @@
 @file:Suppress("UnstableApiUsage")
 
-includeBuild(".")
 includeBuild("gradle-plugins")
 includeProject("swissknife")
 includeProject("acme-schema-catalogue")
@@ -26,7 +25,7 @@ fun subProject(rootFolder: String, vararg pathSegments: String, excludeRootFolde
 
     val projectName = pathSegments.last()
     val path = listOf(rootFolder) + pathSegments.dropLast(1)
-    val group = if (excludeRootFolderFromGroupName) path.minus(rootFolder).joinToString(separator = "-", prefix = "${rootProject.name}-") else path.joinToString(separator = "-", prefix = "${rootProject.name}-")
+    val group = if (excludeRootFolderFromGroupName) path.minus(rootFolder).joinToString(separator = "-") else path.joinToString(separator = "-")
     val directory = path.joinToString(separator = "/", prefix = "./")
     val fullProjectName = "${if (group.isEmpty()) "" else "$group-"}$projectName"
 
@@ -34,9 +33,13 @@ fun subProject(rootFolder: String, vararg pathSegments: String, excludeRootFolde
     project(":$fullProjectName").projectDir = mkdir("$directory/$projectName")
 }
 
-fun includeProject(name: String) {
+fun includeProject(firstSegment: String, vararg otherSegments: String) {
 
-    apply("$name/settings.gradle.kts")
+    val segments = listOf(firstSegment) + otherSegments
+    val projectName = segments.last()
+    val path = segments.dropLast(1)
+    val prefix = path.takeUnless(List<String>::isEmpty)?.joinToString(separator = "/") ?: ""
+    apply("$prefix$projectName/settings.gradle.kts")
 }
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
