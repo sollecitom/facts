@@ -16,3 +16,6 @@
 [submodule "tools"]
 	path = tools
 	url = https://github.com/sollecitom/tools
+[submodule "services/modulith-example"]
+	path = services/modulith-example
+	url = https://github.com/sollecitom/modulith-example

@@ -6,6 +6,7 @@ includeProject("acme-schema-catalogue")
 includeProject("pillar")
 includeProject("examples")
 includeProject("tools")
+includeProject("services", "modulith-example")
 
 rootProject.name = "playground"
 
@@ -38,7 +39,7 @@ fun includeProject(firstSegment: String, vararg otherSegments: String) {
     val segments = listOf(firstSegment) + otherSegments
     val projectName = segments.last()
     val path = segments.dropLast(1)
-    val prefix = path.takeUnless(List<String>::isEmpty)?.joinToString(separator = "/") ?: ""
+    val prefix = path.takeUnless(List<String>::isEmpty)?.joinToString(separator = "/", postfix = "/") ?: ""
     apply("$prefix$projectName/settings.gradle.kts")
 }
 
