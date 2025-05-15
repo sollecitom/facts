@@ -10,7 +10,7 @@ push:
     git add . && git commit -m "WIP" && git push --recurse-submodules=on-demand origin main
 
 pull:
-    git submodule update --recursive --remote
+    git fetch origin && git pull && git submodule update --recursive --remote
 
 build:
     ./gradlew build jibDockerBuild containerBasedServiceTest
