@@ -29,3 +29,36 @@ updateAll:
 
 publishLibraries:
     ./gradlew build publishToMavenLocal
+
+updateWorkspace:
+    cd gradle-plugins
+    just updateAll
+    just build
+    cd ..
+    cd acme-schema-catalogue
+    just updateAll
+    just build
+    cd ..
+    cd swissknife
+    just updateAll
+    just build
+    cd ..
+    cd pillar
+    just updateAll
+    just build
+    cd ..
+    cd tools
+    just updateAll
+    just build
+    cd ..
+    cd examples
+    just updateAll
+    just build
+    cd ..
+    cd services/modulith-example
+    just updateAll
+    just build
+    cd ..
+    cd ..
+    just updateAll
+    just build
