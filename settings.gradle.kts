@@ -8,7 +8,7 @@ includeProject("examples")
 includeProject("tools")
 includeProject("services", "modulith-example")
 
-rootProject.name = "playground"
+rootProject.name = "facts"
 
 fun resource(vararg pathSegments: String) = subProject(rootFolder = "resources", pathSegments = pathSegments)
 

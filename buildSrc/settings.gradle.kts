@@ -1,4 +1,4 @@
-rootProject.name = "playground"
+rootProject.name = "facts"
 
 includeBuild("../gradle-plugins")
 
