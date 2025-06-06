@@ -6,7 +6,6 @@ includeProject("acme-schema-catalogue")
 includeProject("pillar")
 includeProject("examples")
 includeProject("tools")
-includeProject("services", "modulith-example")
 
 rootProject.name = "facts"
 
