@@ -41,6 +41,10 @@ liquibase-slf4j = "5.1.0"
 classgraph = "4.8.179"
 opentelemetry = "1.50.0"
 grafana-otel-lgtm = "1.21.0"
+sollecitom-gradle-plugins = "1.0.0-SNAPSHOT"
+sollecitom-swissknife = "1.0.0-SNAPSHOT"
+sollecitom-pillar = "1.0.0-SNAPSHOT"
+sollecitom-acme-schema-catalogue = "1.0.0-SNAPSHOT"
 # plugins
 palantir-git-plugin = "3.2.0"
 version-catalog-report-plugin = "0.51.0"
@@ -59,6 +63,94 @@ kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-t
 kotlinx-coroutines-debug = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-debug" }
 kotlinx-coroutines-slf4j = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-slf4j" }
 kotlinx-coroutines-reactor = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-reactor" }
+sollecitom-gradle-plugins = { module = "sollecitom.gradle-plugins:gradle-plugins", version.ref = "sollecitom-gradle-plugins" }
+acme-schema-catalogue-avro-common = { module = "sollecitom.acme-schema-catalogue:avro-common", version.ref = "sollecitom-acme-schema-catalogue" }
+acme-schema-catalogue-json-common = { module = "sollecitom.acme-schema-catalogue:json-common", version.ref = "sollecitom-acme-schema-catalogue" }
+acme-schema-catalogue-avro-element-example = { module = "sollecitom.acme-schema-catalogue:avro-element-example", version.ref = "sollecitom-acme-schema-catalogue" }
+acme-schema-catalogue-avro-modulith-example = { module = "sollecitom.acme-schema-catalogue:avro-modulith-example", version.ref = "sollecitom-acme-schema-catalogue" }
+swissknife-lens-core-extensions = { module = "sollecitom.swissknife:lens-core-extensions", version.ref = "sollecitom-swissknife" }
+swissknife-nats-client = { module = "sollecitom.swissknife:nats-client", version.ref = "sollecitom-swissknife" }
+swissknife-configuration-utils = { module = "sollecitom.swissknife:configuration-utils", version.ref = "sollecitom-swissknife" }
+swissknife-json-utils = { module = "sollecitom.swissknife:json-utils", version.ref = "sollecitom-swissknife" }
+swissknife-pagination-test-utils = { module = "sollecitom.swissknife:pagination-test-utils", version.ref = "sollecitom-swissknife" }
+swissknife-readiness-domain = { module = "sollecitom.swissknife:readiness-domain", version.ref = "sollecitom-swissknife" }
+swissknife-sql-domain = { module = "sollecitom.swissknife:sql-domain", version.ref = "sollecitom-swissknife" }
+swissknife-hashing-utils = { module = "sollecitom.swissknife:hashing-utils", version.ref = "sollecitom-swissknife" }
+swissknife-sql-reactive-utils = { module = "sollecitom.swissknife:sql-reactive-utils", version.ref = "sollecitom-swissknife" }
+swissknife-sql-migrator-liquibase = { module = "sollecitom.swissknife:sql-migrator-liquibase", version.ref = "sollecitom-swissknife" }
+swissknife-sql-postgres-pagination-utils = { module = "sollecitom.swissknife:sql-postgres-pagination-utils", version.ref = "sollecitom-swissknife" }
+swissknife-sql-migrator-domain = { module = "sollecitom.swissknife:sql-migrator-domain", version.ref = "sollecitom-swissknife" }
+swissknife-sql-postgres-migrator-liquibase = { module = "sollecitom.swissknife:sql-postgres-migrator-liquibase", version.ref = "sollecitom-swissknife" }
+swissknife-sql-postgres-container = { module = "sollecitom.swissknife:sql-postgres-container", version.ref = "sollecitom-swissknife" }
+swissknife-sql-postgres-utils = { module = "sollecitom.swissknife:sql-postgres-utils", version.ref = "sollecitom-swissknife" }
+swissknife-sql-postgres-test-utils = { module = "sollecitom.swissknife:sql-postgres-test-utils", version.ref = "sollecitom-swissknife" }
+swissknife-openapi-provider = { module = "sollecitom.swissknife:openapi-provider", version.ref = "sollecitom-swissknife" }
+swissknife-openapi-parser = { module = "sollecitom.swissknife:openapi-parser", version.ref = "sollecitom-swissknife" }
+swissknife-openapi-checking-test-utils = { module = "sollecitom.swissknife:openapi-checking-test-utils", version.ref = "sollecitom-swissknife" }
+swissknife-openapi-validation-http4k-test-utils = { module = "sollecitom.swissknife:openapi-validation-http4k-test-utils", version.ref = "sollecitom-swissknife" }
+swissknife-resource-utils = { module = "sollecitom.swissknife:resource-utils", version.ref = "sollecitom-swissknife" }
+swissknife-correlation-core-test-utils = { module = "sollecitom.swissknife:correlation-core-test-utils", version.ref = "sollecitom-swissknife" }
+swissknife-test-utils = { module = "sollecitom.swissknife:test-utils", version.ref = "sollecitom-swissknife" }
+swissknife-pulsar-avro-utils = { module = "sollecitom.swissknife:pulsar-avro-utils", version.ref = "sollecitom-swissknife" }
+swissknife-pulsar-avro-serialization = { module = "sollecitom.swissknife:pulsar-avro-serialization", version.ref = "sollecitom-swissknife" }
+swissknife-pulsar-messaging-adapter = { module = "sollecitom.swissknife:pulsar-messaging-adapter", version.ref = "sollecitom-swissknife" }
+swissknife-pulsar-messaging-test-utils = { module = "sollecitom.swissknife:pulsar-messaging-test-utils", version.ref = "sollecitom-swissknife" }
+swissknife-pagination-domain = { module = "sollecitom.swissknife:pagination-domain", version.ref = "sollecitom-swissknife" }
+swissknife-ddd-domain = { module = "sollecitom.swissknife:ddd-domain", version.ref = "sollecitom-swissknife" }
+swissknife-ddd-test-utils = { module = "sollecitom.swissknife:ddd-test-utils", version.ref = "sollecitom-swissknife" }
+swissknife-avro-schema-catalogue-test-utils = { module = "sollecitom.swissknife:avro-schema-catalogue-test-utils", version.ref = "sollecitom-swissknife" }
+swissknife-protected-value-factory-aes = { module = "sollecitom.swissknife:protected-value-factory-aes", version.ref = "sollecitom-swissknife" }
+swissknife-cryptography-implementation-bouncy-castle = { module = "sollecitom.swissknife:cryptography-implementation-bouncy-castle", version.ref = "sollecitom-swissknife" }
+swissknife-core-domain = { module = "sollecitom.swissknife:core-domain", version.ref = "sollecitom-swissknife" }
+swissknife-correlation-core-domain = { module = "sollecitom.swissknife:correlation-core-domain", version.ref = "sollecitom-swissknife" }
+swissknife-service-domain = { module = "sollecitom.swissknife:service-domain", version.ref = "sollecitom-swissknife" }
+swissknife-logger-core = { module = "sollecitom.swissknife:logger-core", version.ref = "sollecitom-swissknife" }
+swissknife-kotlin-extensions = { module = "sollecitom.swissknife:kotlin-extensions", version.ref = "sollecitom-swissknife" }
+swissknife-web-service-domain = { module = "sollecitom.swissknife:web-service-domain", version.ref = "sollecitom-swissknife" }
+swissknife-messaging-domain = { module = "sollecitom.swissknife:messaging-domain", version.ref = "sollecitom-swissknife" }
+swissknife-logging-standard-slf4j-configuration = { module = "sollecitom.swissknife:logging-standard-slf4j-configuration", version.ref = "sollecitom-swissknife" }
+swissknife-pulsar-json-serialization = { module = "sollecitom.swissknife:pulsar-json-serialization", version.ref = "sollecitom-swissknife" }
+swissknife-avro-serialization-utils = { module = "sollecitom.swissknife:avro-serialization-utils", version.ref = "sollecitom-swissknife" }
+swissknife-avro-schema-catalogue-domain = { module = "sollecitom.swissknife:avro-schema-catalogue-domain", version.ref = "sollecitom-swissknife" }
+swissknife-core-utils = { module = "sollecitom.swissknife:core-utils", version.ref = "sollecitom-swissknife" }
+swissknife-core-test-utils = { module = "sollecitom.swissknife:core-test-utils", version.ref = "sollecitom-swissknife" }
+swissknife-pulsar-utils = { module = "sollecitom.swissknife:pulsar-utils", version.ref = "sollecitom-swissknife" }
+swissknife-pulsar-test-utils = { module = "sollecitom.swissknife:pulsar-test-utils", version.ref = "sollecitom-swissknife" }
+swissknife-web-openapi-utils = { module = "sollecitom.swissknife:web-openapi-utils", version.ref = "sollecitom-swissknife" }
+swissknife-web-openapi-test-utils = { module = "sollecitom.swissknife:web-openapi-test-utils", version.ref = "sollecitom-swissknife" }
+swissknife-opentelemetry-core = { module = "sollecitom.swissknife:opentelemetry-core", version.ref = "sollecitom-swissknife" }
+swissknife-opentelemetry-exporter-oltp = { module = "sollecitom.swissknife:opentelemetry-exporter-oltp", version.ref = "sollecitom-swissknife" }
+swissknife-opentelemetry-test-container-utils = { module = "sollecitom.swissknife:opentelemetry-test-container-utils", version.ref = "sollecitom-swissknife" }
+swissknife-test-containers-utils = { module = "sollecitom.swissknife:test-containers-utils", version.ref = "sollecitom-swissknife" }
+pillar-messaging-domain = { module = "sollecitom.pillar:messaging-domain", version.ref = "sollecitom-pillar" }
+pillar-messaging-avro = { module = "sollecitom.pillar:messaging-avro", version.ref = "sollecitom-pillar" }
+pillar-messaging-pulsar-json = { module = "sollecitom.pillar:messaging-pulsar-json", version.ref = "sollecitom-pillar" }
+pillar-messaging-pulsar-avro = { module = "sollecitom.pillar:messaging-pulsar-avro", version.ref = "sollecitom-pillar" }
+pillar-messaging-test-utils = { module = "sollecitom.pillar:messaging-test-utils", version.ref = "sollecitom-pillar" }
+pillar-service-logging = { module = "sollecitom.pillar:service-logging", version.ref = "sollecitom-pillar" }
+pillar-acme-business-domain = { module = "sollecitom.pillar:acme-business-domain", version.ref = "sollecitom-pillar" }
+pillar-prometheus-micrometer-registry = { module = "sollecitom.pillar:prometheus-micrometer-registry", version.ref = "sollecitom-pillar" }
+pillar-service-container-based-test = { module = "sollecitom.pillar:service-container-based-test", version.ref = "sollecitom-pillar" }
+pillar-json-serialization-core = { module = "sollecitom.pillar:json-serialization-core", version.ref = "sollecitom-pillar" }
+pillar-json-serialization-test-utils = { module = "sollecitom.pillar:json-serialization-test-utils", version.ref = "sollecitom-pillar" }
+pillar-json-serialization-pagination = { module = "sollecitom.pillar:json-serialization-pagination", version.ref = "sollecitom-pillar" }
+pillar-json-serialization-correlation-core = { module = "sollecitom.pillar:json-serialization-correlation-core", version.ref = "sollecitom-pillar" }
+pillar-json-serialization-ddd = { module = "sollecitom.pillar:json-serialization-ddd", version.ref = "sollecitom-pillar" }
+pillar-json-serialization-web-api = { module = "sollecitom.pillar:json-serialization-web-api", version.ref = "sollecitom-pillar" }
+pillar-web-api-utils = { module = "sollecitom.pillar:web-api-utils", version.ref = "sollecitom-pillar" }
+pillar-web-openapi-test-utils = { module = "sollecitom.pillar:web-openapi-test-utils", version.ref = "sollecitom-pillar" }
+pillar-web-api-test-utils = { module = "sollecitom.pillar:web-api-test-utils", version.ref = "sollecitom-pillar" }
+pillar-openapi-rules = { module = "sollecitom.pillar:open-api-rules", version.ref = "sollecitom-pillar" }
+pillar-avro-serialization-ddd = { module = "sollecitom.pillar:avro-serialization-ddd", version.ref = "sollecitom-pillar" }
+pillar-avro-serialization-core = { module = "sollecitom.pillar:avro-serialization-core", version.ref = "sollecitom-pillar" }
+pillar-avro-serialization-correlation-core = { module = "sollecitom.pillar:avro-serialization-correlation-core", version.ref = "sollecitom-pillar" }
+pillar-correlation-logging-test-utils = { module = "sollecitom.pillar:correlation-logging-test-utils", version.ref = "sollecitom-pillar" }
+pillar-correlation-logging-utils = { module = "sollecitom.pillar:correlation-logging-utils", version.ref = "sollecitom-pillar" }
+pillar-http-api-conventions = { module = "sollecitom.pillar:http-api-conventions", version.ref = "sollecitom-pillar" }
+pillar-avro-serialization-test-utils = { module = "sollecitom.pillar:avro-serialization-test-utils", version.ref = "sollecitom-pillar" }
+pillar-messaging-conventions = { module = "sollecitom.pillar:messaging-conventions", version.ref = "sollecitom-pillar" }
+pillar-protected-value-domain = { module = "sollecitom.pillar:protected-value-domain", version.ref = "sollecitom-pillar" }
+pillar-protected-value-messaging-serialization-avro = { module = "sollecitom.pillar:protected-value-messaging-serialization-avro", version.ref = "sollecitom-pillar" }
 slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
 kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinx-datetime" }
 http4k-bom = { module = "org.http4k:http4k-bom", version.ref = "http4k" }

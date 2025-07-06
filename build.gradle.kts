@@ -15,8 +15,12 @@ import java.nio.file.Path
 import java.nio.file.Paths
 
 buildscript {
+    repositories {
+        mavenLocal()
+    }
+
     dependencies {
-        classpath("sollecitom.gradle-plugins", "gradle-plugins")
+        classpath(libs.sollecitom.gradle.plugins)
     }
 }
 
@@ -35,6 +39,7 @@ apply<GitVersionPlugin>()
 apply<DependencyUpdateConvention>()
 
 val parentProject = this
+val projectGroup: String by project
 val currentVersion: String by project
 val versionDetails: Closure<VersionDetails> by extra
 val gitVersion = versionDetails()
@@ -51,7 +56,7 @@ allprojects {
 
     project.extra["gitVersion"] = gitVersion
 
-    group = ProjectSettings.groupId
+    group = projectGroup
     version = currentVersion
 
     repositories { RepositoryConfiguration.Modules.apply(this, project) }

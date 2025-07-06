@@ -1,9 +1,9 @@
 dependencies {
-    implementation(projects.swissknifeCoreUtils)
-    implementation(projects.swissknifeCorrelationCoreDomain)
-    implementation(projects.swissknifeHashingUtils)
-    implementation(projects.swissknifeJsonUtils)
+    implementation(libs.swissknife.core.utils)
+    implementation(libs.swissknife.correlation.core.domain)
+    implementation(libs.swissknife.hashing.utils)
+    implementation(libs.swissknife.json.utils)
 
-    testImplementation(projects.swissknifeCoreTestUtils)
-    testImplementation(projects.swissknifeCorrelationCoreTestUtils)
+    testImplementation(libs.swissknife.core.test.utils)
+    testImplementation(libs.swissknife.correlation.core.test.utils)
 }
