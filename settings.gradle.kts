@@ -10,6 +10,8 @@ fun service(vararg pathSegments: String) = subProject(rootFolder = "services", p
 
 fun example(vararg pathSegments: String) = subProject(rootFolder = "example", pathSegments = pathSegments, excludeRootFolderFromGroupName = false)
 
+fun module(vararg pathSegments: String) = subProject(rootFolder = "modules", pathSegments = pathSegments, excludeRootFolderFromGroupName = false)
+
 fun exercise(vararg pathSegments: String) = subProject(rootFolder = "exercises", pathSegments = pathSegments, excludeRootFolderFromGroupName = false)
 
 fun subProject(rootFolder: String, vararg pathSegments: String, excludeRootFolderFromGroupName: Boolean = true) {
@@ -36,3 +38,8 @@ fun includeProject(firstSegment: String, vararg otherSegments: String) {
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 exercise("event-driven-tic-tac-toe")
+
+module("client", "kotlin", "api")
+module("client", "kotlin", "test-specification")
+module("client", "kotlin", "in-memory", "implementation")
+module("client", "kotlin", "in-memory", "tests")
