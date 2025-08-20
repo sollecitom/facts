@@ -30,6 +30,7 @@ updateAll:
     just update-swissknife
     just update-pillar
     just update-tools
+    just update-examples
     just update-facts
     just update-modulith-example
     just update-element-service-example
@@ -40,6 +41,7 @@ updateAll:
     just push-swissknife
     just push-pillar
     just push-tools
+    just push-examples
     just push-facts
     just push-modulith-example
     just push-element-service-example
