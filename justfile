@@ -24,8 +24,6 @@ updateGradle:
 updateAll:
     just updateDependencies && just updateGradle
 
-
-
 @update-workspace:
     just update-gradle-plugins
     just update-acme-schema-catalogue
