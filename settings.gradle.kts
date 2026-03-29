@@ -7,6 +7,7 @@ plugins {
 rootProject.name = "facts"
 
 includeBuild("../gradle-plugins")
+includeBuild("../swissknife")
 
 fun resource(vararg pathSegments: String) = subProject(rootFolder = "resources", pathSegments = pathSegments)
 
