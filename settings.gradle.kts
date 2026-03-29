@@ -6,6 +6,8 @@ plugins {
 
 rootProject.name = "facts"
 
+includeBuild("../gradle-plugins")
+
 fun resource(vararg pathSegments: String) = subProject(rootFolder = "resources", pathSegments = pathSegments)
 
 fun library(vararg pathSegments: String) = subProject(rootFolder = "libs", pathSegments = pathSegments)
